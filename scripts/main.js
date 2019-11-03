@@ -1,7 +1,19 @@
 // Add your javascript here
 // Don't forget to add it into respective layouts where this js file is needed
 
-// Add smooth scrolling on all links inside the navbar
+
+$('#exampleModal').on('show.bs.modal', function (event) {
+
+    var name = document.getElementById("name").value; // Extract info from data-* attributes
+    var message = document.getElementById("message").value;
+    var mail = document.getElementById("email").value;
+    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    var modal = $(this);
+    modal.find('.first-name input').val(name);
+    modal.find('.mail input').val(mail);
+    modal.find('.message textarea').val(message)
+})
 $("#navbar a").on('click', function(event) {
   
     // Make sure this.hash has a value before overriding default behavior

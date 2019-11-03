@@ -2517,6 +2517,7 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #FF574E;
   border-color: #FF574E;
+  margin-top: 5px;
 }
 
 .btn-primary:hover {
@@ -3984,7 +3985,8 @@ tbody.collapse.show {
 }
 
 .navbar {
-  position: relative;
+  position: fixed;
+  z-index: 11;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3997,6 +3999,7 @@ tbody.collapse.show {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0.5rem 1rem;
+  right: 0;
 }
 
 .navbar > .container,
@@ -7727,7 +7730,7 @@ button.bg-dark:focus {
 
 .pt-5,
 .py-5 {
-  padding-top: 3rem !important;
+  padding-top: 1rem !important;
 }
 
 .pr-5,
@@ -9047,6 +9050,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
+  margin-left: 20px;
 }
 
 .tf-header .nav {
@@ -9057,18 +9061,18 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .tf-header .nav-link {
-  color: rgba(255, 255, 255, 0.75) !important;
+  color: rgba(0, 255, 196) !important;
 }
 
 .tf-header .nav-link:hover {
-  color: white !important;
+  color: #00ff72 !important;
 }
 
 .tf-header h2 {
   text-transform: uppercase;
   margin-top: 4rem;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 30px;
   letter-spacing: 1px;
 }
 
@@ -9080,14 +9084,14 @@ a.text-dark:hover, a.text-dark:focus {
   .tf-header h2 {
     text-transform: uppercase;
     margin-top: 3rem;
-    font-size: 42px;
+    font-size: 27px;
   }
 }
 
 @media (max-width: 991.98px) {
   .tf-header h2 {
-    margin-top: 2rem;
-    font-size: 30px;
+    margin-top: 4rem;
+    font-size: 25px;
   }
 }
 
@@ -9100,10 +9104,17 @@ a.text-dark:hover, a.text-dark:focus {
     margin: 0 auto;
   }
   .tf-header h2 {
-    margin-top: 1rem;
-    font-size: 24px;
+    margin-top: 8rem;
+    font-size: 23px;
+  }
+  .tf-header {
+    height: 730px;
+  }
+  .tf-header::before {
+    height: 730px;
   }
 }
+
 
 @media (max-width: 767.98px) {
   .tf-header .tf-hh-col {
