@@ -163,7 +163,7 @@ sup {
 }
 
 a {
-  color: #FF574E;
+  color: #960000;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -4006,6 +4006,7 @@ tbody.collapse.show {
 .navbar > .container-fluid {
   display: -webkit-box;
   display: -ms-flexbox;
+  background: black;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -4022,7 +4023,7 @@ tbody.collapse.show {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 2.25rem;
   line-height: inherit;
   white-space: nowrap;
 }
@@ -9102,9 +9103,19 @@ a.text-dark:hover, a.text-dark:focus {
   }
   .tf-header #navbar {
     margin: 0 auto;
+    }
+  .navbar > .container, .navbar > .container-fluid {
+
+    width: 75%;
+  }
+  .navbar-brand {
+    font-size: 1.9rem;
+  }
+  .pt-5, .py-5 {
+    padding-top: 0rem !important;
   }
   .tf-header h2 {
-    margin-top: 8rem;
+    margin-top: 9rem;
     font-size: 23px;
   }
   .tf-header {
